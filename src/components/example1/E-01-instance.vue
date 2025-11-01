@@ -2,17 +2,11 @@
   <div>Hello, {{ message }}</div>
 </template>
 
-<script>
-export default {
-  name: "E01Instance",
-  data() {
-    const name = 'Park Minho'
+<script setup>
+import { ref } from 'vue';
 
-    return{
-      message: name,
-    };
-  }
-};
+const name = 'Park Minho';
+const message = ref(name);
 </script>
 
 <style scoped>

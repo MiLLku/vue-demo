@@ -8,8 +8,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: ['message', 'id', 'password'],
-};
+<script setup>
+defineProps(['message', 'id', 'password']);
 </script>
